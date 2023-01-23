@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super Mario Bros - O Filme</title>
+    <link
+      rel="shortcut icon"
+      href="./src/images/favicon.ico"
+      type="image/x-icon"
+    />
+    
+    <link rel="stylesheet" href="./src/css/" />
+    <link rel="stylesheet" href="./src/css/estilos.css" />
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="fundo-video">
+      <video class="video" alt="video-mario" src="./src/video/video-mario.mp4" autoplay loop muted type="video/mp4">
+    </div>
+    <header class="cabecalho">
+      <a>
+        <img
+          class="Logo"
+          src="./src/images/logo-chapeu-mario.png"
+          alt="logo-chapeu-mario"
+        />
+      </a>
+      <nav>
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Detalhes</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <div class="informacoes">
+        <img
+          class="imagem-titulo"
+          src="./src/images/titulo.png"
+          alt="imagem do título do filme"
+        />
+        <p class="descricao">
+        Mario e seu irmão Luigi são dois encanadores que acabam indo parar em um lugar chamado ''Reino dos Cogumelos'', governado pela princesa Peach e assombrado pelo Rei dos Koopas que almeja tomar para si o domínio de todo o território. Embarque com os dois bigodudos nessa jornada para a salvação do reino dos cogumelos!
+        </p>
+        <button class="botao-trailer">Assista ao Trailer</button>
+      </div>
+      <img
+        class="mario"
+        src="./src/images/super-mario-chars.png"
+        alt="personagens do mario bros reunidos"
+      />
+      <div class="modal">
+       <div class="conteudo-modal">
+        <span class="fechar-modal">X</span>
+        <iframe id="video" height="560" width="'315" src="https://www.youtube.com/embed/Cb4WV4aXBpk" title="Trailer oficial" frameboder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"allowFullscreen></iframe>
+      </div>
+      </div>
+    </main>
+   <script src="./src/js/index.js"></script>
+  </body>
+</html>
